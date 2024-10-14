@@ -1,0 +1,21 @@
+[genicam.Lucid.a]
+PixelFormat = "Coord3D_C16"
+# AcquisitionFrameRateEnable = true
+AcquisitionFrameRate = 100
+Scan3dOperatingMode = "HighSpeedDistance625mmSingleFreq"
+Scan3dAmplitudeGain = 0
+ExposureTimeSelector = "Exp1000Us"
+AcquisitionMode = "Continuous"
+
+
+[display.Lucid.slider_defaults_min]
+default_value = 1800
+min_value = 0
+max_value = 5000
+
+
+[display.Lucid.slider_defaults_max]
+default_value = 2200
+min_value = 0
+max_value = 5000
+

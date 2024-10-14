@@ -1,0 +1,7 @@
+exp_time: 0.008
+file_name: 30hz_
+file_path: /mnt/data_nvme/side_camera_behavior/hw_stress_test/stress/hw_stress_test_stress___v2_300_300_12_20241014153539-868622/side_cameras
+framerate: hardware
+gain: 15
+num_images: 2000000
+trigger_line: Line3

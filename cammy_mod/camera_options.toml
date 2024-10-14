@@ -1,0 +1,87 @@
+# ----------------------------------- #
+[genicam.FLIR.a]
+AcquisitionMode = "Continuous"
+# AcquisitionFrameRate = 30
+ExposureMode = 'Timed'
+ExposureAuto = 'Off'
+ExposureTime = 1000
+
+TriggerMode = "On"
+TriggerSource = "Line3"
+TriggerSelector = "FrameStart"
+TriggerActivation = "RisingEdge"
+
+GainAuto = 'Continuous'
+# Gain = 6.8
+
+BinningHorizontal = 1
+BinningVertical = 1
+
+## Encoding params
+PixelFormat = "Mono8"
+
+[genicam.FLIR.b]
+AcquisitionMode = "Continuous"
+# AcquisitionFrameRate = 30
+ExposureMode = 'Timed'
+ExposureAuto = 'Off'
+ExposureTime = 1000
+
+TriggerMode = "On"
+TriggerSource = "Line3"
+TriggerSelector = "FrameStart"
+TriggerActivation = "RisingEdge"
+
+GainAuto = 'Continuous'
+# Gain = 6.8
+
+BinningHorizontal = 1
+BinningVertical = 1
+
+## Encoding params
+PixelFormat = "Mono8"
+
+# ----------------------------------- #
+
+[genicam.Lucid.a]
+Scan3dModeSelector = "Processed"
+PixelFormat = "Coord3D_C16"
+AcquisitionFrameRate = 110
+AcquisitionFrameRateEnable = true
+Scan3dOperatingMode = "HighSpeedDistance625mmSingleFreq"
+# note that max is min + 625
+Scan3dDistanceMin = 200
+Scan3dSpatialFilterEnable = false
+Scan3dFlyingPixelsRemovalEnable = false
+Scan3dConfidenceThresholdEnable = false
+ExposureTimeSelector = "Exp1000Us"
+GevGVSPExtendedIDMode = "On"
+# TriggerOverlap = "Off"
+AcquisitionMode = "Continuous"
+LineSelector = "Line0"
+LineMode = "Input"
+TriggerMode = "On"
+TriggerSelector = "FrameStart"
+TriggerSource = "Line0"
+PtpEnable = true
+
+
+
+[display.Lucid.slider_defaults_min]
+default_value = 700
+min_value = 0
+max_value = 10000
+[display.Lucid.slider_defaults_max]
+default_value = 2300
+min_value = 0
+max_value = 10000
+
+
+[display.FLIR.slider_defaults_min]
+default_value = 0
+min_value = 0
+max_value = 255
+[display.FLIR.slider_defaults_max]
+default_value = 185
+min_value = 0
+max_value = 255
